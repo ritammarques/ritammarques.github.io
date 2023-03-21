@@ -102,6 +102,7 @@ body>div>div>p{
 /*first div*/
 body>div:first-child>div{
     align-items:center;
+    height:95vh;
 }
 body>div:first-child>div p{
     text-align:center;
@@ -139,7 +140,9 @@ nav{
     width:100%;
     display:flex;
     flex-direction: row;
-    margin-top:130px;
+    position:absolute;
+    bottom:0;
+    right:0;
     background-color: var(--background-color);
   background-image: url("assets/background-menu.png");
   background-repeat: no-repeat;
@@ -166,6 +169,7 @@ nav>ul{
 /*segunda div*/
 body>div:not(div:first-child)>div{
     margin-top:100px;
+
 
 }
 body>div:not(div:first-child) p,body>div:not(div:first-child)a{
@@ -426,6 +430,8 @@ body>div:nth-child(2)>div>div>img:nth-child(11), body>div:nth-child(2)>div>div>i
     max-width: 20px;
     min-width: 20px;
     height:95vh;
+    max-height:95vh;
+    flex-wrap: wrap;
     justify-content: space-between;
       
   }
